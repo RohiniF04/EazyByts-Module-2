@@ -91,14 +91,21 @@ export function Sidebar({ className }: SidebarProps) {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center mr-2">
-              JD
+              RMF
             </div>
             <div>
-              <p className="text-sm font-medium">John Doe</p>
+              <p className="text-sm font-medium">RMF</p>
               <p className="text-xs text-muted-foreground">Premium Plan</p>
             </div>
           </div>
-          <Button variant="ghost" size="icon">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={() => {
+              console.log("Logout button clicked");
+              alert("Logout functionality will be implemented in a future update.");
+            }}
+          >
             <LogOut className="h-4 w-4" />
           </Button>
         </div>
