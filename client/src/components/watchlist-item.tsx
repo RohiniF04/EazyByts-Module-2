@@ -22,7 +22,7 @@ export function WatchlistItem({
   price,
   change,
 }: WatchlistItemProps) {
-  const navigate = useNavigate();
+  const [, navigate] = useLocation();
   const queryClient = useQueryClient();
   const { toast } = useToast();
   
