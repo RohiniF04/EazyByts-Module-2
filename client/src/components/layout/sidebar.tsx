@@ -126,7 +126,7 @@ export function Sidebar({ className }: SidebarProps) {
   }
   
   return (
-    <div className={cn("hidden md:flex h-screen border-r flex-col", className)}>
+    <div className={cn("hidden md:flex min-h-screen h-full border-r flex-col fixed top-16 bottom-0 left-0 w-60", className)}>
       <ScrollArea className="flex-1">
         <NavContent />
       </ScrollArea>
