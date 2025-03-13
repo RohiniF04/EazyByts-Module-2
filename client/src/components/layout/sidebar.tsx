@@ -42,21 +42,22 @@ export function Sidebar({ className }: SidebarProps) {
       icon: <Star className="mr-2 h-4 w-4" />,
       href: "/watchlist",
     },
-    {
-      title: "Explore",
-      icon: <Search className="mr-2 h-4 w-4" />,
-      href: "/explore",
-    },
-    {
-      title: "News",
-      icon: <Newspaper className="mr-2 h-4 w-4" />,
-      href: "/news",
-    },
-    {
-      title: "Settings",
-      icon: <Settings className="mr-2 h-4 w-4" />,
-      href: "/settings",
-    },
+    // These features are coming soon:
+    // {
+    //   title: "Explore",
+    //   icon: <Search className="mr-2 h-4 w-4" />,
+    //   href: "/explore",
+    // },
+    // {
+    //   title: "News",
+    //   icon: <Newspaper className="mr-2 h-4 w-4" />,
+    //   href: "/news",
+    // },
+    // {
+    //   title: "Settings",
+    //   icon: <Settings className="mr-2 h-4 w-4" />,
+    //   href: "/settings",
+    // },
   ];
   
   const NavContent = () => (
