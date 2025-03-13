@@ -64,7 +64,7 @@ export function Sidebar({ className }: SidebarProps) {
     <>
       <div className="px-3 py-4">
         <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">
-          FinVest
+          StockTrack
         </h2>
         <div className="space-y-1">
           {navItems.map((item) => (

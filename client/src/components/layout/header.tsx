@@ -14,7 +14,7 @@ export function Header() {
       
       <div className="flex-1 flex justify-between items-center">
         <div className="hidden md:block text-xl font-bold">
-          FinVest
+          StockTrack
         </div>
           
         <div className="ml-auto flex items-center gap-4">
