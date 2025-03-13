@@ -24,7 +24,14 @@ export default function WatchlistPage() {
   
   // Search for stocks
   const { data: searchResults, isLoading: isSearching } = useQuery<any[]>({
-    queryKey: [`/api/search?q=${searchQuery}`],
+    queryKey: ['/api/search', searchQuery],
+    queryFn: async () => {
+      const response = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`);
+      if (!response.ok) {
+        throw new Error('Failed to search stocks');
+      }
+      return response.json();
+    },
     enabled: !!searchQuery && searchQuery.length > 1,
   });
   
